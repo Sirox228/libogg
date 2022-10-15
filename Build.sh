@@ -1,7 +1,7 @@
 NDK=/home/runner/work/android-ndk-r15c/
 HOST_ARCH="linux-x86_64"
 
-./autogen.sh
+./libogg/autogen.sh
 
 case "$1" in
     clean)
