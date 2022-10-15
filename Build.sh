@@ -3,8 +3,7 @@ DEST=$(cd "$(dirname "$0")" && pwd)/build/$1
 HOST_ARCH="linux-x86_64"
 
 cd libogg
-./autogen.sh
-ls -l
+./configure --host=arm-android-linux
 
 case "$1" in
     clean)
