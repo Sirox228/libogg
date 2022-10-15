@@ -23,6 +23,7 @@ jobs:
           sudo apt install make -y
           sudo apt install automake -y
           sudo apt install autoconf -y
+          sudo apt install libtool -y
           sudo apt install clang -y
           sudo apt install build-essential -y
           sudo apt install zip -y
@@ -60,6 +61,7 @@ jobs:
           sudo apt install make -y
           sudo apt install automake -y
           sudo apt install autoconf -y
+          sudo apt install libtool -y
           sudo apt install clang -y
           sudo apt install build-essential -y
           sudo apt install zip -y
@@ -98,6 +100,7 @@ jobs:
           sudo apt install make -y
           sudo apt install automake -y
           sudo apt install autoconf -y
+          sudo apt install libtool -y
           sudo apt install clang -y
           sudo apt install build-essential -y
           sudo apt install zip -y
@@ -136,6 +139,7 @@ jobs:
           sudo apt install make -y
           sudo apt install automake -y
           sudo apt install autoconf -y
+          sudo apt install libtool -y
           sudo apt install clang -y
           sudo apt install build-essential -y
           sudo apt install zip -y
