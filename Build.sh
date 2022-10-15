@@ -1,7 +1,7 @@
 NDK=ANDROID_NDK_HOME
 HOST_ARCH="linux-x86_64"
 
-./configure --host=arm-android-linux
+./autogen.sh
 
 case "$1" in
     clean)
