@@ -44,7 +44,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-Arm
-          path: libogg/src/libogg.a
+          path: libogg
 
   buildArm64:
     # The type of runner that the job will run on
