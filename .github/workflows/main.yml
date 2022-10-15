@@ -38,13 +38,11 @@ jobs:
       - name: Build
         run: |
           ./Build.sh armeabi-v7a
-          pwd
-          ls -l libogg
           
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-Arm
-          path: libogg
+          path: libogg/src/.libs/libogg.a
 
   buildArm64:
     # The type of runner that the job will run on
@@ -82,7 +80,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-Aarch64
-          path: libogg/src/libogg.a
+          path: libogg/src/.libs/libogg.a
 
   # This workflow contains a single job called "build"
   buildx86:
@@ -121,7 +119,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-x86
-          path: libogg/src/libogg.a
+          path: libogg/src/.libs/libogg.a
 
   # This workflow contains a single job called "build"
   buildx86_64:
@@ -160,4 +158,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-x86_64
-          path: libogg/src/libogg.a
+          path: libogg/src/.libs/libogg.a
