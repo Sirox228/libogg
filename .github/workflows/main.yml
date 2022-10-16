@@ -80,7 +80,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ogg-Aarch64
-          path: libogg
+          path: libogg/src/.libs/libogg.a
 
   # This workflow contains a single job called "build"
   buildx86:
