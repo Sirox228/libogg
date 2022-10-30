@@ -1,7 +1,5 @@
 NDK=${ANDROID_NDK_HOME}
 
-echo ${NDK}
-
 cd libogg
 FLAGS=""
 ./configure $FLAGS
