@@ -12,10 +12,12 @@ LOCAL_CFLAGS := -DHAVE_CONFIG_H \
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/libogg \
-    $(LOCAL_PATH)/libogg/include
+    $(LOCAL_PATH)/libogg/include \
+    $(LOCAL_PATH)/libogg/src
 
 LOCAL_SRC_FILES := \
-    $(LOCAL_PATH)/libogg/src
+    $(LOCAL_PATH)/libogg/src/bitwise.c \
+    $(LOCAL_PATH)/libogg/src/framing.c
 
 ifeq ($(strip $(TARGET_ARCH)),arm)
     LOCAL_CFLAGS += -DCPU_ARM -D_ARM_ASSEM_
