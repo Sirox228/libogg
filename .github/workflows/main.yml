@@ -39,3 +39,8 @@ jobs:
         with:
           name: ogg-x86_64
           path: obj/local/x86_64/libogg.a
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ogg-x86_64
+          path: libogg/config.h
